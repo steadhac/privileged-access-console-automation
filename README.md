@@ -46,30 +46,31 @@ This framework validates:
 ## 🏗️ Architecture
 
 ### Project Structure
+
 privileged-access-console-automation/
 ├── tests/
-│ ├── guacamole/ # Guacamole privileged access tests
-│ │ ├── guacamole-auth.spec.ts # Authentication tests
-│ │ ├── guacamole-ldap.spec.ts # LDAP integration tests
-│ │ └── guacamole-fault-tolerance.spec.ts # Fault tolerance tests
-│ ├── ui/ # Web console UI tests
-│ ├── api/ # Backend API tests
-│ ├── integration/ # Enterprise integration tests
-│ ├── e2e/ # End-to-end scenarios
-│ ├── pages/ # Page Object Models
-│ │ ├── GuacamoleLoginPage.ts
-│ │ ├── GuacamoleDashboardPage.ts
-│ │ └── GuacamoleSettingsPage.ts
-│ └── config/ # Test configuration
-│ └── credentials.ts
-├── docs/ # Documentation
-├── playwright-report/ # Test reports (generated)
-├── test-results/ # Test artifacts (generated)
-├── .env # Environment configuration
-├── playwright.config.ts # Playwright configuration
-├── package.json # Dependencies
-└── README.md # This file
-
+│   ├── config/
+│   │   └── credentials.ts
+│   ├── pages/
+│   │   ├── LoginPage.ts
+│   │   ├── DashboardPage.ts
+│   │   ├── AdminPage.ts
+│   │   ├── GuacamoleLoginPage.ts
+│   │   └── GuacamoleDashboardPage.ts
+│   ├── guacamole/
+│   │   ├── guacamole-auth.spec.ts
+│   │   ├── guacamole-ldap.spec.ts
+│   │   └── guacamole-fault-tolerance.spec.ts
+│   └── orangehrm/
+│       ├── auth.spec.ts
+│       ├── rbac.spec.ts
+│       └── sql-injection.spec.ts
+├── docs/
+│   ├── TEST_PLAN.md
+│   └── TEST_CASES.md
+├── playwright.config.ts
+├── package.json
+└── README.md
 
 ### Design Patterns
 

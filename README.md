@@ -46,10 +46,10 @@ This framework validates:
 ## 🏗️ Architecture
 
 ### Project Structure
-```
+```text
 privileged-access-console-automation/
 ├── tests/
-│   ├── config/
+│   ├── config/git 
 │   │   └── credentials.ts
 │   ├── pages/
 │   │   ├── LoginPage.ts

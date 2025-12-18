@@ -1,0 +1,153 @@
+# Automating Privileged Access Management: A QA Engineer's Journey with Apache Guacamole
+
+## Introduction
+
+In today's cybersecurity landscape, privileged access management (PAM) is critical for protecting sensitive systems. I recently completed a comprehensive QA automation project focused on testing Apache Guacamole, a clientless remote desktop gateway that provides secure access to RDP, VNC, SSH, and Telnet connections through a web browser.
+
+This project showcases my expertise in end-to-end testing, security validation, and enterprise system integration—delivering 46 automated test cases with a 91% pass rate.
+
+## Project Overview
+
+**Apache Guacamole** serves as a jump box/bastion host solution, providing:
+- Centralized privileged access to remote systems
+- Browser-based connectivity without client software
+- Session recording and audit trails for compliance
+- Integration with enterprise directories (LDAP/Active Directory)
+
+My testing framework validates authentication, RBAC permissions, security controls, and system resilience across multiple browsers.
+
+## Technical Stack
+
+**Testing Framework:**
+- Playwright 1.40+ for cross-browser E2E testing
+- TypeScript 5.0+ for type-safe test development
+- Node.js 18+ runtime environment
+- Docker for containerized test environments
+- PostgreSQL 13+ database backend
+
+**Design Patterns:**
+- Page Object Model (POM) for maintainable test code
+- Centralized credential management
+- Environment-based configuration
+- Reusable test components
+
+## Test Coverage Breakdown
+
+### Authentication & Session Management
+✅ Valid admin login with credentials  
+✅ Logout functionality and session termination  
+✅ Session timeout validation  
+✅ Concurrent user session handling  
+
+### LDAP Integration
+✅ LDAP settings interface navigation  
+⏭️ Advanced LDAP configurations (professionally documented as skipped)  
+
+*Note: 4 LDAP tests require source compilation and are professionally documented with skip rationale*
+
+### Security Testing
+✅ SQL injection prevention  
+✅ XSS (Cross-Site Scripting) prevention  
+✅ Password field masking  
+✅ Input validation and sanitization  
+
+### Fault Tolerance
+✅ Invalid connection handling  
+✅ Network timeout resilience  
+✅ Error message validation  
+✅ Graceful failure recovery  
+✅ Malformed URL protection  
+
+### Role-Based Access Control (RBAC)
+✅ Admin full access validation  
+✅ Manager limited permissions  
+✅ Analyst read operations  
+✅ Viewer read-only enforcement  
+✅ Permission inheritance testing  
+
+## Key Achievements
+
+**Test Metrics:**
+- 46 automated test cases implemented
+- 42 passing tests (91% pass rate)
+- 4 professionally documented skipped tests
+- Multi-browser support (Chromium, Firefox, WebKit)
+
+**Code Quality:**
+- Comprehensive JSDoc documentation
+- Type-safe TypeScript implementation
+- Page Object Model architecture
+- Centralized configuration management
+
+**DevOps Integration:**
+- Docker Compose orchestration
+- PostgreSQL database backend
+- CI/CD ready automation framework
+- Environment variable configuration
+
+## Challenges & Solutions
+
+### Challenge 1: LDAP Extension Unavailable
+**Problem:** LDAP authentication extension requires manual compilation from source  
+**Solution:** Professionally documented 4 LDAP tests as skipped with clear rationale, implemented navigation tests for LDAP interface  
+**Outcome:** Transparent test reporting with 91% coverage on executable tests  
+
+### Challenge 2: Dynamic Element Locators
+**Problem:** Guacamole user menu resolved to multiple elements causing strict mode violations  
+**Solution:** Refined locator to `.user-menu.first()` ensuring single element selection  
+**Outcome:** Stable, reliable logout functionality testing  
+
+### Challenge 3: Network Timeout Handling
+**Problem:** Admin panel loading caused intermittent test failures  
+**Solution:** Implemented `waitForLoadState('networkidle')` with appropriate timeouts  
+**Outcome:** Consistent test execution across environments  
+
+## Business Impact
+
+This automation framework provides:
+
+**Security Validation:** Verifies critical security controls (SQL injection, XSS prevention, session management)  
+**Compliance Support:** Documents RBAC enforcement for audit requirements (SOC 2, PCI-DSS, NIST 800-53)  
+**Regression Prevention:** Catches breaking changes before production deployment  
+**Quality Assurance:** Validates privileged access workflows across browsers  
+
+## Technical Skills Demonstrated
+
+✅ End-to-end test automation with Playwright  
+✅ TypeScript for type-safe development  
+✅ Page Object Model design pattern  
+✅ Docker containerization  
+✅ PostgreSQL database integration  
+✅ Enterprise authentication testing  
+✅ Security testing (SQL injection, XSS)  
+✅ RBAC and permission validation  
+✅ Multi-browser compatibility testing  
+✅ CI/CD pipeline integration  
+
+## Repository & Documentation
+
+📂 **GitHub Repository:** [privileged-access-console-automation](https://github.com/steadhac/privileged-access-console-automation)
+
+**Project Documentation:**
+- Comprehensive README with setup instructions
+- Detailed test plan (TEST_PLAN.md)
+- Complete test case documentation (TEST_CASES.md)
+- MIT License
+
+## Conclusion
+
+This project demonstrates my ability to build enterprise-grade QA automation frameworks for complex security-critical applications. The 91% test pass rate, comprehensive documentation, and professional handling of environmental constraints showcase my commitment to quality engineering.
+
+Whether you need authentication testing, security validation, or RBAC enforcement, this portfolio project illustrates my expertise in delivering reliable, maintainable automated test solutions.
+
+---
+
+**Tags:** #QAAutomation #Playwright #TypeScript #SecurityTesting #ApacheGuacamole #PrivilegedAccessManagement #DevOps #Docker #RBAC #EndToEndTesting
+
+**Author:** Carolina Steadham  
+**Role:** QA Automation Engineer  
+**Date:** December 2025  
+
+---
+
+*Ready to discuss how automated testing can strengthen your security posture? Connect with me on [GitHub](https://github.com/steadhac)!*

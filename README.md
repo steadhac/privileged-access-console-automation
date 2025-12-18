@@ -46,7 +46,7 @@ This framework validates:
 ## 🏗️ Architecture
 
 ### Project Structure
-
+```
 privileged-access-console-automation/
 ├── tests/
 │   ├── config/
@@ -71,6 +71,7 @@ privileged-access-console-automation/
 ├── playwright.config.ts
 ├── package.json
 └── README.md
+```
 
 ### Design Patterns
 

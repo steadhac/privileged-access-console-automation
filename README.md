@@ -46,7 +46,7 @@ This framework validates:
 ## 🏗️ Architecture
 
 ### Project Structure
-
+```text
 privileged-access-console-automation/
 ├── tests/
 │   ├── config/
@@ -71,7 +71,7 @@ privileged-access-console-automation/
 ├── playwright.config.ts
 ├── package.json
 └── README.md
-
+```
 ### Design Patterns
 
 - **Page Object Model (POM)**: Encapsulates page interactions

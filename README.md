@@ -391,11 +391,20 @@ MIT License - See LICENSE file for details
 
 ---
 
-## 📧 Contact
+## 👤 Author
 
-For questions or collaboration opportunities, please reach out through GitHub.
+**Carolina Steadham**
+- GitHub: [@steadhac](https://github.com/steadhac)
+- LinkedIn: [Carolina Steadham](https://linkedin.com/in/carolinacsteadham)
 
 ---
+
+<div align="center">
+
+**⭐ Star this repo if you find it helpful!**
+
+Made with ❤️ and Python
+
 
 **Note**: This is a demonstration project created to showcase QA automation skills for enterprise privileged access management systems. Test scenarios utilize publicly available applications and follow industry best practices for security testing.
 

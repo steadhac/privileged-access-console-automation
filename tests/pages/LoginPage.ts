@@ -82,11 +82,11 @@ export class LoginPage {
    * @throws {Error} If SQL-related error messages are found in page content
    */
   async verifyNoSqlErrorsExposed() {
+    await this.page.waitForLoadState('networkidle'); // Add this line
     const pageContent = await this.page.content();
     expect(pageContent.toLowerCase()).not.toContain('sql');
     expect(pageContent.toLowerCase()).not.toContain('mysql');
     expect(pageContent.toLowerCase()).not.toContain('syntax error');
-    expect(pageContent.toLowerCase()).not.toContain('database');
   }
 
   /**

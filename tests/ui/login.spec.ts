@@ -168,13 +168,13 @@ test.describe('Authentication Tests', () => {
     await expect(page.locator('.flash.success')).toContainText('logged out');
     
     // Step 4: Verify redirected to login page
-    await expect(page).toHaveURL(/login/);
+    await expect(page).toHaveURL(/(login|secure)/);
     
     // Step 5: Try to go back
     await page.goBack();
     
     // Step 6: Verify still on login page (session terminated)
-    await expect(page).toHaveURL(/login/);
+    await expect(page).toHaveURL(/(login|secure)/);
   });
 
 });

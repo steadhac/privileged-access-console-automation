@@ -2,6 +2,14 @@
 
 A comprehensive QA automation framework for testing Apache Guacamole privileged access management and enterprise admin console applications.
 
+[![Java](https://img.shields.io/badge/Java-17+-ED8B00.svg)](https://www.java.com/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E.svg)](https://www.javascript.com/)
+[![Docker](https://img.shields.io/badge/Docker-Latest-2496ED.svg)](https://www.docker.com/)
+[![Apache Guacamole](https://img.shields.io/badge/Apache-Guacamole-4CAF50.svg)](https://guacamole.apache.org/)
+[![PAM](https://img.shields.io/badge/PAM-Authentication-FF9800.svg)](https://linux.die.net/man/8/pam)
+[![Shell](https://img.shields.io/badge/Shell-Bash-89E051.svg)](https://www.gnu.org/software/bash/)
+
+
 ## 📋 Table of Contents
 
 - [Project Overview](#project-overview)

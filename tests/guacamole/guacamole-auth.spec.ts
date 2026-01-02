@@ -11,7 +11,8 @@ import { credentials } from '../config/credentials';
  * 
  * Security Importance:
  * Authentication is the first line of defense for privileged access management.
- * These tests validate that only authorized users can access remote systems.
+ * These tests validate that only authorized users can access remote systems.test-results/
+playwright-report/
  */
 test.describe('Guacamole Authentication Tests', () => {
   
